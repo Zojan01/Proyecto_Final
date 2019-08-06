@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Persistence
 {
-    class ProjectDbContext : DbContext
+    public class ProjectDbContext : DbContext
     {
 
         public DbSet<Cursos> Curso { get; set; }
