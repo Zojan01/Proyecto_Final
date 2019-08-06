@@ -8,16 +8,15 @@ namespace Model
     public class EstudiantePariente
     {
         
-        int IdEstudiante { get; set; }
+        public int IdEstudiante { get; set; }
         
-        String IdParientes { get; set; }
+        public  String IdPariente { get; set; }
 
         [ForeignKey("IdEstudiante")]
         public virtual Estudiantes Estudiantes { get; set; }
         [ForeignKey("IdParientes")]
         public virtual Parientes Parientes { get; set; }
 
-
-        String TipoRelacion { get; set; }
+        public String TipoRelacion { get; set; }
     }
 }

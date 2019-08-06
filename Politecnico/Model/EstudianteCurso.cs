@@ -14,6 +14,9 @@ namespace Model
         [ForeignKey("IdEstudiante")]
         public virtual Estudiantes Estudiante { get; set; }
         [ForeignKey("IdCurso")]
-        public virtual Cursos Curso { get; set; }  
+        public virtual Cursos Curso { get; set; }
+
+
+        
     }
 }
